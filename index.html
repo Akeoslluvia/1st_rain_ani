@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rain</title>
+</head>
+<body>
+
+<style>
+    
+    body {
+        background-image: url('bg_rain.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        color:#F9EAE1 ;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .container {
+    border-style: outset; 
+    max-width: fit-content;
+    margin-left:auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 200px;
+    font-family: Arial, Helvetica, sans-serif; 
+    Margin-top:200px;
+    Background-color:#272932;
+    }
+
+    .input1 [type=text] {
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid black;
+        margin-bottom: 5px;
+        
+        
+    }
+
+    button {
+        background-color: #52414C;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+        margin-top: 200px;
+        border-radius: 20px;
+        padding: 20px 20px 20px 20px;
+        font-size: 20px;
+        border-style: solid white;
+        box-shadow: 5px 5px 5px black;
+        color: white;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    }
+
+
+    </style>
+
+<script>
+    function checkPassword() {
+        // Predefined password (you can change it to whatever you want)
+        const correctPassword = "121210";
+        
+        // Get the input value from the password field
+        let enteredPassword = document.getElementById("password").value;
+
+        // Check if the entered password matches
+        if (enteredPassword === correctPassword) {
+            // Redirect to the next page
+            window.location.href = "flower.html";
+        } else {
+            // Display an alert for incorrect password
+            alert("Incorrect password. Please try again.");
+        }
+    }
+</script>
+
+
+<div class="container">
+    <center>
+        <h1>Secret for Rain</h1>
+</center>
+
+<label for="password">Enter Password:</label>
+<input type="password" id="password" name="password">
+<br>
+<button onclick="checkPassword()">SUBMIT</button>   
+
+ 
+</body>
+</html>
